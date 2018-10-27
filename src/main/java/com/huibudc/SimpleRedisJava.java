@@ -1,10 +1,11 @@
 package com.huibudc;
 
+import com.huibudc.facotry.Factory;
 import redis.clients.jedis.Jedis;
 
 
 public class SimpleRedisJava {
-    private final static Jedis jedis = new Jedis("localhost");
+    private final static Jedis jedis = Factory.jedis();
 
     public static void main(String[] args) {
         System.out.println("is server running ? " + isServerRunning());
