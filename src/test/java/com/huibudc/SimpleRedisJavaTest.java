@@ -13,6 +13,7 @@ public class SimpleRedisJavaTest {
     @After
     public void tearDown() throws Exception {
         jedis.del("name");
+        jedis.close();
     }
 
     @Test
