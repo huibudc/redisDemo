@@ -18,7 +18,7 @@ public class ConnectionPool {
         config.setMaxIdle(2);
         config.setMaxTotal(10);
         config.setMaxWaitMillis(1000 * 2);
-        config.setTestOnBorrow(true); // 设置是否测试连接池畅通;
+        config.setTestOnBorrow(true);  // 设置是否测试连接池畅通;
         return config;
     }
 
